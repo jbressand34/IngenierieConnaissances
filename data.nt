@@ -1,0 +1,57 @@
+<http://www.choisirseschaussures.fr/ontology#Nuun> <http://www.w3.org/2000/01/rdf-schema#label> "Nuun Bush Norcross 84526 Cap Toe Oxford (Men's)" . #http://www.shoebuy.com/nunn-bush-norcross-84526-cap-toe-oxford/717732/1573389?cm_vc=bn_searchresults_carou_loc1
+<http://www.choisirseschaussures.fr/ontology#Converse> <http://www.w3.org/2000/01/rdf-schema#label> "Converse Chuck Taylor All Star High Top Sneaker" . #http://www.shoebuy.com/converse-chuck-taylor-all-star-high-top-sneaker/415612/884042
+<http://www.choisirseschaussures.fr/ontology#Saucony> <http://www.w3.org/2000/01/rdf-schema#label> "Saucony Hurricane IS03 Running Sneaker" . #http://www.shoebuy.com/saucony-hurricane-iso3-running-sneaker/795600/1709282?cm_vc=bn_searchresults_carou_loc1
+<http://www.choisirseschaussures.fr/ontology#Keen> <http://www.w3.org/2000/01/rdf-schema#label> "Keen Newport H2 Sandal (Men's)" . #http://www.shoebuy.com/keen-newport-h2-sandal/256109/545794
+<http://www.choisirseschaussures.fr/ontology#tecnica> <http://www.w3.org/2000/01/rdf-schema#label> "Aconcaqua lhp gtx vibram Marron" . #https://www.spartoo.com/Tecnica-x1773978.php?product=1773978&track_id=adwo_fgl&sx=H&utm_source=froogle&utm_medium=comparateurs&utm_content=1773978&utm_campaign=adwo_fgl&size_id=108&ggnetwork=g&ggcreative=50769348268&ggkeyword&ggmatchtype&ggsource=s&mkwid=63mElYU4_dc&plid&ggcamp=226809388&gclid=CjwKEAjwqZ7GBRC1srKSv9TV_iwSJADKTjaDyvuktIF_QfuMtb-ZbC_Ld732DogwGhUzbBiZaUe7LxoCP2_w_wcB&marque=0
+<http://www.choisirseschaussures.fr/ontology#dribbling> <http://www.w3.org/2000/01/rdf-schema#label> "Dribbling S3 SRC" . #http://www.manelli.fr/1300-chaussures-de-securite-noire-dribbling-s3-src.html?gclid=CjwKEAjwqZ7GBRC1srKSv9TV_iwSJADKTjaD8uwiK1nbkN1cW1qtaHeL2W566MKajyrjezv4pKwtIxoCIx3w_wcB 
+
+<http://www.choisirseschaussures.fr/ontology#Nuun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.choisirseschaussures.fr/ontology#Chaussure> .
+<http://www.choisirseschaussures.fr/ontology#Nuun> <http://www.choisirseschaussures.fr/ontology#aPourMateriauSemelle> <http://www.choisirseschaussures.fr/ontology#bois> .
+<http://www.choisirseschaussures.fr/ontology#Nuun> <http://www.choisirseschaussures.fr/ontology#aPourMateriauTige> <http://www.choisirseschaussures.fr/ontology#cuir> .
+<http://www.choisirseschaussures.fr/ontology#Nuun> <http://www.choisirseschaussures.fr/ontology#aPourMateriauInterieur> <http://www.choisirseschaussures.fr/ontology#feutre> .
+<http://www.choisirseschaussures.fr/ontology#Nuun> <http://www.choisirseschaussures.fr/ontology#aPourTemperatureIdeale> "15"^^<http://www.w3.org/2001/XMLSchema#byte> .
+<http://www.choisirseschaussures.fr/ontology#Nuun> <http://www.choisirseschaussures.fr/ontology#aCommeTailleSemelle> "1"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://www.choisirseschaussures.fr/ontology#Nuun> <http://www.choisirseschaussures.fr/ontology#aCommeHauteurTige> "$moyen$" .
+
+<http://www.choisirseschaussures.fr/ontology#Converse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.choisirseschaussures.fr/ontology#Chaussure> .
+<http://www.choisirseschaussures.fr/ontology#Converse> <http://www.choisirseschaussures.fr/ontology#aPourMateriauSemelle> <http://www.choisirseschaussures.fr/ontology#caoutchouc> .
+<http://www.choisirseschaussures.fr/ontology#Converse> <http://www.choisirseschaussures.fr/ontology#aPourMateriauTige> <http://www.choisirseschaussures.fr/ontology#maillageFin> .
+<http://www.choisirseschaussures.fr/ontology#Converse> <http://www.choisirseschaussures.fr/ontology#aPourMateriauInterieur> <http://www.choisirseschaussures.fr/ontology#polyurethane> .
+<http://www.choisirseschaussures.fr/ontology#Converse> <http://www.choisirseschaussures.fr/ontology#aPourTemperatureIdeale> "20"^^<http://www.w3.org/2001/XMLSchema#byte> .
+<http://www.choisirseschaussures.fr/ontology#Converse> <http://www.choisirseschaussures.fr/ontology#aCommeTailleSemelle> "0.5"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://www.choisirseschaussures.fr/ontology#Converse> <http://www.choisirseschaussures.fr/ontology#aCommeHauteurTige> "$haut$" .
+
+<http://www.choisirseschaussures.fr/ontology#Saucony> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.choisirseschaussures.fr/ontology#Chaussure> .
+<http://www.choisirseschaussures.fr/ontology#Saucony> <http://www.choisirseschaussures.fr/ontology#aPourMateriauSemelle> <http://www.choisirseschaussures.fr/ontology#polyurethane> .
+<http://www.choisirseschaussures.fr/ontology#Saucony> <http://www.choisirseschaussures.fr/ontology#aPourMateriauTige> <http://www.choisirseschaussures.fr/ontology#maillageEpais> .
+<http://www.choisirseschaussures.fr/ontology#Saucony> <http://www.choisirseschaussures.fr/ontology#aPourMateriauInterieur> <http://www.choisirseschaussures.fr/ontology#polyurethane> .
+<http://www.choisirseschaussures.fr/ontology#Saucony> <http://www.choisirseschaussures.fr/ontology#aPourTemperatureIdeale> "15"^^<http://www.w3.org/2001/XMLSchema#byte> .
+<http://www.choisirseschaussures.fr/ontology#Saucony> <http://www.choisirseschaussures.fr/ontology#aCommeTailleSemelle> "2"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://www.choisirseschaussures.fr/ontology#Saucony> <http://www.choisirseschaussures.fr/ontology#aCommeHauteurTige> "$moyen$" .
+
+<http://www.choisirseschaussures.fr/ontology#Keen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.choisirseschaussures.fr/ontology#Chaussure> .
+<http://www.choisirseschaussures.fr/ontology#Keen> <http://www.choisirseschaussures.fr/ontology#aPourMateriauSemelle> <http://www.choisirseschaussures.fr/ontology#polyurethane> .
+<http://www.choisirseschaussures.fr/ontology#Keen> <http://www.choisirseschaussures.fr/ontology#aPourMateriauTige> <http://www.choisirseschaussures.fr/ontology#maillageFin> .
+<http://www.choisirseschaussures.fr/ontology#Keen> <http://www.choisirseschaussures.fr/ontology#aPourMateriauInterieur> <http://www.choisirseschaussures.fr/ontology#polyurethane> .
+<http://www.choisirseschaussures.fr/ontology#Keen> <http://www.choisirseschaussures.fr/ontology#aPourTemperatureIdeale>  "25"^^<http://www.w3.org/2001/XMLSchema#byte> .
+<http://www.choisirseschaussures.fr/ontology#Keen> <http://www.choisirseschaussures.fr/ontology#aCommeTailleSemelle> "2"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://www.choisirseschaussures.fr/ontology#Keen> <http://www.choisirseschaussures.fr/ontology#aPourQualiteCouvrement> <http://www.choisirseschaussures.fr/ontology#lanieres> .
+<http://www.choisirseschaussures.fr/ontology#Keen> <http://www.choisirseschaussures.fr/ontology#aCommeHauteurTige> "$bas$" .
+
+<http://www.choisirseschaussures.fr/ontology#tecnica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.choisirseschaussures.fr/ontology#Chaussure> .
+<http://www.choisirseschaussures.fr/ontology#tecnica> <http://www.choisirseschaussures.fr/ontology#aPourMateriauSemelle> <http://www.choisirseschaussures.fr/ontology#polyurethane> .
+<http://www.choisirseschaussures.fr/ontology#tecnica> <http://www.choisirseschaussures.fr/ontology#aPourMateriauTige> <http://www.choisirseschaussures.fr/ontology#cuir> .
+<http://www.choisirseschaussures.fr/ontology#tecnica> <http://www.choisirseschaussures.fr/ontology#aPourMateriauInterieur> <http://www.choisirseschaussures.fr/ontology#polyurethane> .
+<http://www.choisirseschaussures.fr/ontology#tecnica> <http://www.choisirseschaussures.fr/ontology#aPourTemperatureIdeale>  "-5"^^<http://www.w3.org/2001/XMLSchema#byte> .
+<http://www.choisirseschaussures.fr/ontology#tecnica> <http://www.choisirseschaussures.fr/ontology#aCommeTailleSemelle> "2"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://www.choisirseschaussures.fr/ontology#tecnica> <http://www.choisirseschaussures.fr/ontology#aPourQualiteAdherance> <http://www.choisirseschaussures.fr/ontology#semelleAntiDerapante> .
+<http://www.choisirseschaussures.fr/ontology#tecnica> <http://www.choisirseschaussures.fr/ontology#aCommeHauteurTige> "$haut$" .
+
+<http://www.choisirseschaussures.fr/ontology#dribbling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.choisirseschaussures.fr/ontology#Chaussure> .
+<http://www.choisirseschaussures.fr/ontology#dribbling> <http://www.choisirseschaussures.fr/ontology#aPourMateriauSemelle> <http://www.choisirseschaussures.fr/ontology#polyurethane> .
+<http://www.choisirseschaussures.fr/ontology#dribbling> <http://www.choisirseschaussures.fr/ontology#aPourMateriauTige> <http://www.choisirseschaussures.fr/ontology#cuir> .
+<http://www.choisirseschaussures.fr/ontology#dribbling> <http://www.choisirseschaussures.fr/ontology#aPourMateriauInterieur> <http://www.choisirseschaussures.fr/ontology#polyurethane> .
+<http://www.choisirseschaussures.fr/ontology#dribbling> <http://www.choisirseschaussures.fr/ontology#aPourTemperatureIdeale>  "15"^^<http://www.w3.org/2001/XMLSchema#byte> .
+<http://www.choisirseschaussures.fr/ontology#dribbling> <http://www.choisirseschaussures.fr/ontology#aCommeTailleSemelle> "1.2"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://www.choisirseschaussures.fr/ontology#dribbling> <http://www.choisirseschaussures.fr/ontology#aCommeHauteurTige> "$moyen$" .
+

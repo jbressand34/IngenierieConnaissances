@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1489487200793" name="http://www.ema.com/ontologies/series" uri="Reasoning_demo/resources/seriev7.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1489487200793" name="http://www.semanticweb.org/jbressand/ontologies/2017/1/untitled-ontology-6" uri="projetIngenierieConnaissance.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1489487200793" name="http://www.semanticweb.org/sharispe/ontologies/2017/0/untitled-ontology-25" uri="Reasoning_demo/resources/authors.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1489487200793" name="shadowed:http://www.semanticweb.org/jbressand/ontologies/2017/1/untitled-ontology-6" uri="Reasoning_demo/resources/projetIngenierieConnaissance.owl"/>
+    </group>
+</catalog>

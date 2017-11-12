@@ -1,0 +1,935 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/jbressand/ontologies/2017/1/untitled-ontology-6#"
+     xml:base="http://www.semanticweb.org/jbressand/ontologies/2017/1/untitled-ontology-6"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.choisirseschaussures.fr/ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#aPourMateriauInterieur -->
+
+    <owl:ObjectProperty rdf:about="http://www.choisirseschaussures.fr/ontology#aPourMateriauInterieur">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.choisirseschaussures.fr/ontology#Chaussure"/>
+        <rdfs:range rdf:resource="http://www.choisirseschaussures.fr/ontology#MateriauInterieur"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#aPourMateriauSemelle -->
+
+    <owl:ObjectProperty rdf:about="http://www.choisirseschaussures.fr/ontology#aPourMateriauSemelle">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.choisirseschaussures.fr/ontology#Chaussure"/>
+        <rdfs:range rdf:resource="http://www.choisirseschaussures.fr/ontology#MateriauSemelle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#aPourMateriauTige -->
+
+    <owl:ObjectProperty rdf:about="http://www.choisirseschaussures.fr/ontology#aPourMateriauTige">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.choisirseschaussures.fr/ontology#Chaussure"/>
+        <rdfs:range rdf:resource="http://www.choisirseschaussures.fr/ontology#MateriauTige"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#aPourQualiteAdherance -->
+
+    <owl:ObjectProperty rdf:about="http://www.choisirseschaussures.fr/ontology#aPourQualiteAdherance">
+        <rdfs:domain rdf:resource="http://www.choisirseschaussures.fr/ontology#Chaussure"/>
+        <rdfs:range rdf:resource="http://www.choisirseschaussures.fr/ontology#Adherence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#aPourQualiteCouvrement -->
+
+    <owl:ObjectProperty rdf:about="http://www.choisirseschaussures.fr/ontology#aPourQualiteCouvrement">
+        <rdfs:domain rdf:resource="http://www.choisirseschaussures.fr/ontology#Chaussure"/>
+        <rdfs:range rdf:resource="http://www.choisirseschaussures.fr/ontology#Couvrement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#aCommeHauteurTige -->
+
+    <owl:DatatypeProperty rdf:about="http://www.choisirseschaussures.fr/ontology#aCommeHauteurTige">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.choisirseschaussures.fr/ontology#Chaussure"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>$bas$</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>$haut$</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>$moyen$</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#aCommeTailleSemelle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.choisirseschaussures.fr/ontology#aCommeTailleSemelle">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.choisirseschaussures.fr/ontology#Chaussure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#aPourTemperatureIdeale -->
+
+    <owl:DatatypeProperty rdf:about="http://www.choisirseschaussures.fr/ontology#aPourTemperatureIdeale">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.choisirseschaussures.fr/ontology#Chaussure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#Adherence -->
+
+    <owl:Class rdf:about="http://www.choisirseschaussures.fr/ontology#Adherence">
+        <rdfs:subClassOf rdf:resource="http://www.choisirseschaussures.fr/ontology#Qualite"/>
+        <owl:disjointWith rdf:resource="http://www.choisirseschaussures.fr/ontology#Couvrement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#Chaussure -->
+
+    <owl:Class rdf:about="http://www.choisirseschaussures.fr/ontology#Chaussure">
+        <owl:disjointWith rdf:resource="http://www.choisirseschaussures.fr/ontology#Materiau"/>
+        <owl:disjointWith rdf:resource="http://www.choisirseschaussures.fr/ontology#Qualite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#ChaussureEvenement -->
+
+    <owl:Class rdf:about="http://www.choisirseschaussures.fr/ontology#ChaussureEvenement">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#Chaussure"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.choisirseschaussures.fr/ontology#aCommeTailleSemelle"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.choisirseschaussures.fr/ontology#Chaussure"/>
+        <owl:disjointWith rdf:resource="http://www.choisirseschaussures.fr/ontology#ChaussureSport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#ChaussureEvenementChic -->
+
+    <owl:Class rdf:about="http://www.choisirseschaussures.fr/ontology#ChaussureEvenementChic">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#ChaussureEvenement"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.choisirseschaussures.fr/ontology#aPourMateriauInterieur"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#feutre"/>
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#liege"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.choisirseschaussures.fr/ontology#aPourMateriauSemelle"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#bois"/>
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#cuir"/>
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#liege"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.choisirseschaussures.fr/ontology#aPourMateriauTige"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#cuir"/>
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#daim"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.choisirseschaussures.fr/ontology#ChaussureEvenement"/>
+        <owl:disjointWith rdf:resource="http://www.choisirseschaussures.fr/ontology#ChaussureEvenementDecontracte"/>
+        <owl:disjointWith rdf:resource="http://www.choisirseschaussures.fr/ontology#ChaussureTravailDeplacement"/>
+        <owl:disjointWith rdf:resource="http://www.choisirseschaussures.fr/ontology#ChaussureVoyage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#ChaussureEvenementDecontracte -->
+
+    <owl:Class rdf:about="http://www.choisirseschaussures.fr/ontology#ChaussureEvenementDecontracte">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#ChaussureEvenement"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.choisirseschaussures.fr/ontology#aPourMateriauInterieur"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#feutre"/>
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#liege"/>
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#polyurethane"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.choisirseschaussures.fr/ontology#aPourMateriauSemelle"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#caoutchouc"/>
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#cuir"/>
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#liege"/>
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#polyurethane"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.choisirseschaussures.fr/ontology#aPourMateriauTige"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#maillageEpais"/>
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#maillageFin"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.choisirseschaussures.fr/ontology#ChaussureEvenement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#ChaussureSport -->
+
+    <owl:Class rdf:about="http://www.choisirseschaussures.fr/ontology#ChaussureSport">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#Chaussure"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.choisirseschaussures.fr/ontology#aCommeTailleSemelle"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.choisirseschaussures.fr/ontology#Chaussure"/>
+        <owl:disjointWith rdf:resource="http://www.choisirseschaussures.fr/ontology#ChaussureTravailBureau"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#ChaussureSportAvecTerrain -->
+
+    <owl:Class rdf:about="http://www.choisirseschaussures.fr/ontology#ChaussureSportAvecTerrain">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#ChaussureSport"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.choisirseschaussures.fr/ontology#aPourMateriauInterieur"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#polyurethane"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.choisirseschaussures.fr/ontology#aPourMateriauSemelle"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#caoutchouc"/>
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#polyurethane"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.choisirseschaussures.fr/ontology#aPourMateriauTige"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#maillageEpais"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.choisirseschaussures.fr/ontology#aCommeHauteurTige"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:oneOf>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>$moyen$</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </owl:oneOf>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.choisirseschaussures.fr/ontology#ChaussureSport"/>
+        <owl:disjointWith rdf:resource="http://www.choisirseschaussures.fr/ontology#ChaussureSportMer"/>
+        <owl:disjointWith rdf:resource="http://www.choisirseschaussures.fr/ontology#ChaussureSportMontagne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#ChaussureSportMer -->
+
+    <owl:Class rdf:about="http://www.choisirseschaussures.fr/ontology#ChaussureSportMer">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#ChaussureSport"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.choisirseschaussures.fr/ontology#aPourMateriauInterieur"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#polyurethane"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.choisirseschaussures.fr/ontology#aPourMateriauSemelle"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#caoutchouc"/>
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#polyurethane"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.choisirseschaussures.fr/ontology#aPourMateriauTige"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#maillageFin"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.choisirseschaussures.fr/ontology#aPourQualiteCouvrement"/>
+                        <owl:hasValue rdf:resource="http://www.choisirseschaussures.fr/ontology#lanieres"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.choisirseschaussures.fr/ontology#aCommeHauteurTige"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:oneOf>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>$bas$</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>$moyen$</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </owl:oneOf>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.choisirseschaussures.fr/ontology#ChaussureSport"/>
+        <owl:disjointWith rdf:resource="http://www.choisirseschaussures.fr/ontology#ChaussureSportMontagne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#ChaussureSportMontagne -->
+
+    <owl:Class rdf:about="http://www.choisirseschaussures.fr/ontology#ChaussureSportMontagne">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#ChaussureSport"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.choisirseschaussures.fr/ontology#aPourMateriauInterieur"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#polyurethane"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.choisirseschaussures.fr/ontology#aPourMateriauSemelle"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#caoutchouc"/>
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#polyurethane"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.choisirseschaussures.fr/ontology#aPourMateriauTige"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#cuir"/>
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#maillageEpais"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.choisirseschaussures.fr/ontology#aPourQualiteAdherance"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#crampons"/>
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#semelleAntiDerapante"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.choisirseschaussures.fr/ontology#aCommeHauteurTige"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:oneOf>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>$haut$</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </owl:oneOf>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.choisirseschaussures.fr/ontology#ChaussureSport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#ChaussureTravail -->
+
+    <owl:Class rdf:about="http://www.choisirseschaussures.fr/ontology#ChaussureTravail">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#Chaussure"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.choisirseschaussures.fr/ontology#aCommeTailleSemelle"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.choisirseschaussures.fr/ontology#aCommeTailleSemelle"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.choisirseschaussures.fr/ontology#Chaussure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#ChaussureTravailBureau -->
+
+    <owl:Class rdf:about="http://www.choisirseschaussures.fr/ontology#ChaussureTravailBureau">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#ChaussureTravail"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.choisirseschaussures.fr/ontology#aPourMateriauInterieur"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#feutre"/>
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#liege"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.choisirseschaussures.fr/ontology#aPourMateriauSemelle"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#bois"/>
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#cuir"/>
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#liege"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.choisirseschaussures.fr/ontology#aPourMateriauTige"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#cuir"/>
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#daim"/>
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#maillageFin"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.choisirseschaussures.fr/ontology#ChaussureTravail"/>
+        <owl:disjointWith rdf:resource="http://www.choisirseschaussures.fr/ontology#ChaussureTravailDeplacement"/>
+        <owl:disjointWith rdf:resource="http://www.choisirseschaussures.fr/ontology#ChaussureVoyage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#ChaussureTravailDeplacement -->
+
+    <owl:Class rdf:about="http://www.choisirseschaussures.fr/ontology#ChaussureTravailDeplacement">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#ChaussureTravail"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.choisirseschaussures.fr/ontology#aPourMateriauInterieur"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#polyurethane"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.choisirseschaussures.fr/ontology#aPourMateriauSemelle"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#caoutchouc"/>
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#polyurethane"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.choisirseschaussures.fr/ontology#aPourMateriauTige"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#cuir"/>
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#maillageEpais"/>
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#maillageFin"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.choisirseschaussures.fr/ontology#ChaussureTravail"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#ChaussureVoyage -->
+
+    <owl:Class rdf:about="http://www.choisirseschaussures.fr/ontology#ChaussureVoyage">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#Chaussure"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.choisirseschaussures.fr/ontology#aPourMateriauInterieur"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#polyurethane"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.choisirseschaussures.fr/ontology#aPourMateriauSemelle"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#caoutchouc"/>
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#cuir"/>
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#polyurethane"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.choisirseschaussures.fr/ontology#aPourMateriauTige"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#cuir"/>
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#maillageEpais"/>
+                                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#maillageFin"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.choisirseschaussures.fr/ontology#Chaussure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#ChaussureVoyagePaysFroids -->
+
+    <owl:Class rdf:about="http://www.choisirseschaussures.fr/ontology#ChaussureVoyagePaysFroids">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#ChaussureVoyage"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.choisirseschaussures.fr/ontology#aPourTemperatureIdeale"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#byte">10</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.choisirseschaussures.fr/ontology#ChaussureVoyage"/>
+        <owl:disjointWith rdf:resource="http://www.choisirseschaussures.fr/ontology#ChaussureVoyagePaysTemperes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#ChaussureVoyagePaysTemperes -->
+
+    <owl:Class rdf:about="http://www.choisirseschaussures.fr/ontology#ChaussureVoyagePaysTemperes">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.choisirseschaussures.fr/ontology#ChaussureVoyage"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.choisirseschaussures.fr/ontology#aPourTemperatureIdeale"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#byte">10</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.choisirseschaussures.fr/ontology#ChaussureVoyage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#Couvrement -->
+
+    <owl:Class rdf:about="http://www.choisirseschaussures.fr/ontology#Couvrement">
+        <rdfs:subClassOf rdf:resource="http://www.choisirseschaussures.fr/ontology#Qualite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#Materiau -->
+
+    <owl:Class rdf:about="http://www.choisirseschaussures.fr/ontology#Materiau">
+        <owl:disjointWith rdf:resource="http://www.choisirseschaussures.fr/ontology#Qualite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#MateriauInterieur -->
+
+    <owl:Class rdf:about="http://www.choisirseschaussures.fr/ontology#MateriauInterieur">
+        <rdfs:subClassOf rdf:resource="http://www.choisirseschaussures.fr/ontology#Materiau"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#MateriauSemelle -->
+
+    <owl:Class rdf:about="http://www.choisirseschaussures.fr/ontology#MateriauSemelle">
+        <rdfs:subClassOf rdf:resource="http://www.choisirseschaussures.fr/ontology#Materiau"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#MateriauTige -->
+
+    <owl:Class rdf:about="http://www.choisirseschaussures.fr/ontology#MateriauTige">
+        <rdfs:subClassOf rdf:resource="http://www.choisirseschaussures.fr/ontology#Materiau"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#Qualite -->
+
+    <owl:Class rdf:about="http://www.choisirseschaussures.fr/ontology#Qualite"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#bois -->
+
+    <owl:NamedIndividual rdf:about="http://www.choisirseschaussures.fr/ontology#bois">
+        <rdf:type rdf:resource="http://www.choisirseschaussures.fr/ontology#MateriauSemelle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#caoutchouc -->
+
+    <owl:NamedIndividual rdf:about="http://www.choisirseschaussures.fr/ontology#caoutchouc">
+        <rdf:type rdf:resource="http://www.choisirseschaussures.fr/ontology#MateriauSemelle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#crampons -->
+
+    <owl:NamedIndividual rdf:about="http://www.choisirseschaussures.fr/ontology#crampons">
+        <rdf:type rdf:resource="http://www.choisirseschaussures.fr/ontology#Adherence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#cuir -->
+
+    <owl:NamedIndividual rdf:about="http://www.choisirseschaussures.fr/ontology#cuir">
+        <rdf:type rdf:resource="http://www.choisirseschaussures.fr/ontology#MateriauSemelle"/>
+        <rdf:type rdf:resource="http://www.choisirseschaussures.fr/ontology#MateriauTige"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#daim -->
+
+    <owl:NamedIndividual rdf:about="http://www.choisirseschaussures.fr/ontology#daim">
+        <rdf:type rdf:resource="http://www.choisirseschaussures.fr/ontology#MateriauTige"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#feutre -->
+
+    <owl:NamedIndividual rdf:about="http://www.choisirseschaussures.fr/ontology#feutre">
+        <rdf:type rdf:resource="http://www.choisirseschaussures.fr/ontology#MateriauInterieur"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#lanieres -->
+
+    <owl:NamedIndividual rdf:about="http://www.choisirseschaussures.fr/ontology#lanieres">
+        <rdf:type rdf:resource="http://www.choisirseschaussures.fr/ontology#Couvrement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#liege -->
+
+    <owl:NamedIndividual rdf:about="http://www.choisirseschaussures.fr/ontology#liege">
+        <rdf:type rdf:resource="http://www.choisirseschaussures.fr/ontology#MateriauInterieur"/>
+        <rdf:type rdf:resource="http://www.choisirseschaussures.fr/ontology#MateriauSemelle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#maillageEpais -->
+
+    <owl:NamedIndividual rdf:about="http://www.choisirseschaussures.fr/ontology#maillageEpais">
+        <rdf:type rdf:resource="http://www.choisirseschaussures.fr/ontology#MateriauTige"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#maillageFin -->
+
+    <owl:NamedIndividual rdf:about="http://www.choisirseschaussures.fr/ontology#maillageFin">
+        <rdf:type rdf:resource="http://www.choisirseschaussures.fr/ontology#MateriauTige"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#polyurethane -->
+
+    <owl:NamedIndividual rdf:about="http://www.choisirseschaussures.fr/ontology#polyurethane">
+        <rdf:type rdf:resource="http://www.choisirseschaussures.fr/ontology#MateriauInterieur"/>
+        <rdf:type rdf:resource="http://www.choisirseschaussures.fr/ontology#MateriauSemelle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.choisirseschaussures.fr/ontology#semelleAntiDerapante -->
+
+    <owl:NamedIndividual rdf:about="http://www.choisirseschaussures.fr/ontology#semelleAntiDerapante">
+        <rdf:type rdf:resource="http://www.choisirseschaussures.fr/ontology#Adherence"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.1.20160306-0033) https://github.com/owlcs/owlapi -->
+
