@@ -1,1 +1,1 @@
-Projet de construction d'une ontologie pour un système de recommandation de chaussure. Utilisation du logiciel Protege.
+Projet de construction d'une ontologie pour un système de recommendation de chaussure. Utilisation du logiciel Protege.
